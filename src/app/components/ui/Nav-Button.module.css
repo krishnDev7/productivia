@@ -1,0 +1,17 @@
+.btn {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #B3C5FC;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--primary-bgDark);
+  color: white;
+}
