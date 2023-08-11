@@ -1,4 +1,5 @@
-import { StaticImageData } from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { URL } from "url";
 
 export type ButtonProps = {
   text: string;
@@ -6,14 +7,9 @@ export type ButtonProps = {
   className?: string;
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
-  src?: string;
   style?: React.CSSProperties;
-  icon?:  React.ReactNode;
-  iconPosition?: "left" | "right";
-  iconStyle?: React.CSSProperties;
-  iconClassName?: string;
-  loading?: boolean;
-  loadingText?: string;
-  loadingIcon?: React.ReactNode;
-  loadingIconPosition?: "left" | "right";
+  children?: React.ReactNode;
+  src?: string;
+  icon?: StaticImport | string;
+  href?: URL | string;
 };

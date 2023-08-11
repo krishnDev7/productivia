@@ -2,12 +2,23 @@ import Link from "next/link";
 import React from "react";
 import NavButton from "../ui/Nav-Button";
 import classes from "./MainNavigation.module.css";
-import home_icon from "@/app/Assets/Home_Icon.png";
+import Image from "next/image";
+import Productivia_Logo from "../../Assets/Productivia_Logo.png";
 
 export const MainNavigation: React.FC = (props) => {
   return (
     <nav className={classes.nav}>
-      <div>Logo</div>
+      <div >
+        <Link href="/" className={classes.projectLogo}>
+          <Image 
+            src={Productivia_Logo}
+            alt="Productivia Logo"
+            width={75}
+            height={75}
+          />
+          <p>Productivia</p>
+        </Link>
+      </div>
       <ul>
         <li>
           <Link href="/">

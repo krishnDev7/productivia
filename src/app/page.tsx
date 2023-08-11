@@ -1,5 +1,7 @@
 import React from "react";
 
 export default function page() {
-  return <main>page</main>;
+  return <main>
+    <h1>Welcome to Productivia</h1>
+  </main>;
 }
